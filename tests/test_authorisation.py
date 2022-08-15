@@ -2,8 +2,7 @@
 # для запуска теста нужно выполнит команду:
 # python -m pytest -v --driver Chrome --driver-path C:\ChromeDriveSelenium\chromedriver.exe tests\test_authorisation.py
 from pages.auth_page import AuthPage
-from pages.account_page import AccountPage
-from tests.data import correct_email,correct_pass,incorrect_email,incorrect_pass
+from tests.data import correct_email,correct_pass
 import pickle
 
 def test_authorisation_with_correct_data(web_browser):

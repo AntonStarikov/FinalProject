@@ -1,10 +1,8 @@
-import os,pickle
+import os
 
 from pages.base import WebPage
 from pages.elements import WebElement
 from pages.elements import ManyWebElements
-import json
-from urllib.parse import urlparse
 
 class MainPage(WebPage):
 
@@ -14,11 +12,6 @@ class MainPage(WebPage):
 
         super().__init__(web_driver, url)
 
-        # with open('cookies.tmp', 'rb') as cookiesfile:
-        #     cookies = pickle.load(cookiesfile)
-        # for cookie in cookies:
-        #     web_driver.add_cookie(cookie)
-        # web_driver.refresh()
 
     how_to_pay=WebElement(xpath='//a[@title="Как купить"]')
     club_bonus=WebElement(xpath='//a[@title="Клуб ON-бонус"]')

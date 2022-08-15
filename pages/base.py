@@ -193,7 +193,7 @@ class WebPage(object):
 
         def wait_for_ajax_loading(web_browser, class_name):
             """
-            Ожидает, пока индикатор загрузки ajax не исчезнет..
+            Ожидает, пока индикатор загрузки ajax не исчезнет.
             """
             WebDriverWait(web_browser, 10).until(lambda web_browser: len(web_browser.find_elements_by_class_name(
                 class_name)) == 0)

@@ -2,7 +2,6 @@
 # python -m pytest -v --driver Chrome --driver-path C:\ChromeDriveSelenium\chromedriver.exe tests\test_auth_page.py
 # 7 тестов
 from pages.auth_page import AuthPage
-from pages.account_page import AccountPage
 from tests.data import correct_email,correct_pass,incorrect_email,incorrect_pass
 import pytest
 
